@@ -22,9 +22,7 @@ public class Sqrt
 			{
 				z = ((a / x) + x) / 2.0;
 				d = (z - x) * (z - x);
-				if (d < 0.000001)
-					break ;
-				else
+				if (d > 0.000001)
 					x = z;
 			}
 			System.out.println("sqrt = " + z);
